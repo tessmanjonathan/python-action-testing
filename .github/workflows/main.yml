@@ -35,13 +35,3 @@ jobs:
         
       - name: Run autopep8
         run: autopep8 $GITHUB_WORKSPACE/. --recursive --in-place
-
-      - name: Git Commit and Push
-        uses: github-actions-x/commit@v2.8
-        with:
-          # Github Token with commit access
-          github-token: $GITHUB_TOKEN
-          push-branch: $GITHUB_BASE_REF
-          commit-message: "Autopep8 action commit"
-          email: "actions@github.com"
-          name: "Github Actions"
