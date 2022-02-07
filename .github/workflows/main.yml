@@ -41,7 +41,7 @@ jobs:
         with:
           # Github Token with commit access
           github-token: $GITHUB_TOKEN
-          # Specify commit message
+          push-branch: $GITHUB_BASE_REF
           commit-message: "Autopep8 action commit"
           email: "actions@github.com"
           name: "Github Actions"
