@@ -38,3 +38,7 @@ jobs:
 
       - name: Run commit shell script
         run: sh $GITHUB_WORKSPACE/scripts/gitpush.sh
+        env:
+          BRANCH_NAME: $GITHUB_HEAD_REF
+          ACTOR_NAME: $GITHUB_ACTOR
+
