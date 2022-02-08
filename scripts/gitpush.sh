@@ -1,7 +1,8 @@
 #!/bin/bash
 
 set -eu
-
+echo $BRANCH_NAME
+echo $ACTOR_NAME
 
 cd .;
 
