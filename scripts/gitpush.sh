@@ -11,8 +11,8 @@ if [ -n "$(git status -s)" ]; then
     git add .;
     git -c user.name="GitHub Actions" -c user.email="actions@github.com" \
       commit -m "Auto commit from action" \
-      --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>";
-    git push origin;
+      --author="${{ github.actor }}";
+      git push origin;
 else
     echo "Working tree clean. Nothing to commit.";
 fi
