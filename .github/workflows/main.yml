@@ -35,3 +35,6 @@ jobs:
         
       - name: Run autopep8
         run: autopep8 $GITHUB_WORKSPACE/. --recursive --in-place
+
+      - name: Run commit shell script
+        run: "${GITHUB_WORKSPACE}/.github/workfows/gitpush.sh"
