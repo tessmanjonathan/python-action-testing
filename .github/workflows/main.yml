@@ -37,4 +37,4 @@ jobs:
         run: autopep8 $GITHUB_WORKSPACE/. --recursive --in-place
 
       - name: Run commit shell script
-        run: sh $GITHUB_WORKSPACE/.github/workfows/gitpush.sh
+        run: sh $GITHUB_WORKSPACE/scripts/gitpush.sh
