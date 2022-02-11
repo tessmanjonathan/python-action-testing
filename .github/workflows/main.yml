@@ -30,7 +30,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.3.2
 
-      - name: Install pep8 
+      - name: Install autopep8 
         run: python -m pip install autopep8
         
       - name: Run autopep8
