@@ -6,7 +6,7 @@ echo $ACTOR_NAME
 
 cd .;
 
-if [[ -n $(git status -s) ]]; then
+if [ -n $(git status -s) ]; then
     git fetch --depth=1;
     git checkout $BRANCH_NAME;
     git add .;
